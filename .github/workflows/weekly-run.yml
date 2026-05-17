@@ -2,8 +2,8 @@ name: weekly-run
 
 on:
   schedule:
-    # Every Monday at 10:00 UTC — offset 1h from research-blog to avoid SearchAPI contention.
-    - cron: "0 10 * * 1"
+    # Every Sunday at 10:00 UTC (12:00 France CEST) — offset 1h from research-blog to avoid SearchAPI contention.
+    - cron: "0 10 * * 0"
   push:
     branches: [main]
     paths:
