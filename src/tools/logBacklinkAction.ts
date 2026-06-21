@@ -13,7 +13,7 @@ export async function logBacklinkAction(params: {
     url: params.url,
     name: params.name,
     actionDate: params.actionDate,
-    status: "ASKED",
+    status: "CONTACTED",
   };
 
   const res = await fetch(ENDPOINT, {
